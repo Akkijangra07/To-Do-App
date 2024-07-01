@@ -47,6 +47,7 @@
   background: linear-gradient(#77747c,#585364);
   color: white;
   font-size: 1.2rem;
+  outline: none;
   
 }
 .todoItem{

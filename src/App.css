@@ -1,0 +1,148 @@
+
+.container{
+  background: linear-gradient(#8c3ed5,#aa479b);
+  width: 100vw;
+  max-width: 50rem;
+  margin: 0 auto;
+  min-height:90vh ;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  font-family: "Poppins",sans-serif;
+  margin-top: 1rem;
+}
+.heading{
+  color: whitesmoke;
+  background: rgba(0,0,0,0.1,);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: 2px solid white;
+  box-shadow: 0 0 100px gray;
+  margin-top: 1rem;
+
+}
+
+
+.todoInput{
+  border: none;
+  box-shadow: 0px 0px 5px gray;
+  width: 25rem;
+  padding: 0.8rem 1.2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin: 2rem 0rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+.addTodoBtn{
+  border: none;
+  box-shadow: 0px 0px 5px gray;
+  width: max-content;
+  padding: 0.8rem 1.2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin: 2rem 0rem;
+  background: linear-gradient(#77747c,#585364);
+  color: white;
+  font-size: 1.2rem;
+  
+}
+.todoItem{
+  background-color: aliceblue;
+  width:22rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  
+}
+.todoItems{
+  width: 100vw;
+  max-width: 50rem;
+  margin: 0 auto;
+  min-height:max-content ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#binBtn{
+  font-size: 1.3rem;
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 2px black;
+
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.3rem;
+}
+#binBtn:hover{
+  color: red;
+  transform: scale(1.02);
+  transition: 0.1s;
+  box-shadow: 0px 0px 2px red;
+
+}
+
+
+
+.removeBtn{
+  border: none;
+  box-shadow: 0px 0px 5px gray;
+  width: max-content;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0rem;
+  background: linear-gradient(#77747c,#585364);
+  color: white;
+  font-size: 1rem;
+}
+
+
+@media screen and (max-width:830px){
+  .container{
+    max-width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  #binBtn{
+    font-size: 3vw;
+    padding: 1vw;
+    box-shadow: none;
+  }
+  #binBtn:hover{
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width:600px){
+  .heading{
+    font-size:4vw;
+    margin-top: 1rem;
+  }
+  .todoInput , .addTodoBtn ,.removeBtn{
+    max-width: 55vw;
+    font-size: 4vw;
+    padding: 3vw;
+  }
+  .todoItem{
+    max-width: 60vw;
+    padding: 3vw;
+    font-size: 3.5vw;
+    max-height: 7vw;
+    border-radius: 0.3rem;
+  }
+  #binBtn{
+    font-size: 4vw;
+    box-shadow: none;
+  }
+  #binBtn:hover{
+    box-shadow: none;
+  }
+}
